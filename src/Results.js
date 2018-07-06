@@ -2,7 +2,7 @@ import React from 'react';
 import Information from './Information';
 import Picture from './Picture';
 
-const wrapperStyle = { width: 200, margin: 20 };
+const wrapperStyle = { width: 200, margin: 20, fontFamily: 'Roboto' };
 const informationStyle = { paddingTop: 10 };
 
 const Results = (props) => {

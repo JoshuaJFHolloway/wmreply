@@ -3,6 +3,9 @@ import ResultsHolder from './ResultsHolder';
 import Button from './Button';
 import Form from './Form';
 
+const padding = { paddingLeft: 61 };
+const width = {width: 118};
+
 class App extends Component {
   constructor() {
     super();
@@ -130,40 +133,43 @@ class App extends Component {
     const results = this.state.results;
     const showForm = this.state.params.showForm;
 
-      return results ? (
-        <div>
+    return results ? (
+      <div>
+        <div style={padding}>
           <input
+            style={width}
             type="text"
             name="search"
             onChange={this.handleChange}
           />
-          <Button
-            title={this.state.params.buttonTitle}
-            name='ascending'
-            onClick={this.handleOnClick}
-          />
-          <Button
-            title='Add a user'
-            name='showForm'
-            onClick={this.showForm}
-          />
-          { showForm ?
+        </div>
+        <Button
+          title={this.state.params.buttonTitle}
+          name='ascending'
+          onClick={this.handleOnClick}
+        />
+        <Button
+          title='Add a user'
+          name='showForm'
+          onClick={this.showForm}
+        />
+          {showForm ?
             <Form
               onChange={this.formChange}
               onClick={this.submit}
             /> : null
           }
-          <ResultsHolder
-            results={results}
-            search={search}
-          />
-        </div>
-      ) : (
-        <div>
-          <h2>Fetching Data!</h2>
-        </div>
-      )
-    }
+        <ResultsHolder
+          results={results}
+          search={search}
+        />
+      </div>
+    ) : (
+      <div>
+        <h2>Fetching Data!</h2>
+      </div>
+    )
+  }
 }
 
 export default App;
