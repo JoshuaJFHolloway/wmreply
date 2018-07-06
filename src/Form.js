@@ -2,26 +2,25 @@ import React from 'react';
 import Button from './Button';
 
 const Form = (props) => {
+
+  const inputArray = [];
+  const name = ["first", "last", "email"];
+  const placeholder =["Enter a forename", "Enter a surname", "Enter an email"];
+
+  for (let i = 0; i < 3; i++) {
+    inputArray.push(
+      <input
+        type='text'
+        name={name[i]}
+        placeholder={placeholder[i]}
+        onChange={props.onChange}
+      />
+    )
+  }
+
   return (
     <div>
-      <input
-        type='text'
-        placeholder="Enter a first name"
-        name='first'
-        onChange={props.onChange}
-      />
-      <input
-        type='text'
-        name='last'
-        placeholder="Enter a last name"
-        onChange={props.onChange}
-      />
-      <input
-        type='text'
-        name='email'
-        placeholder="Enter an email address"
-        onChange={props.onChange}
-      />
+      {inputArray}
       <Button
         name='submit'
         onClick={props.onClick}
