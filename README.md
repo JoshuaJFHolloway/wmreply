@@ -93,13 +93,17 @@ is a way of changing it so that I do not need two event onChange handlers.
 - Use styled-components instead of normal css which has made it a bit scrappy.
 - Test the code with jest, enzyme and sinon.
 - Make the whole application look more presentable from a styling point of view, its very minimalistic currently
-as WM Reply stated that styling wasn't the focus of this project.
+as WM Reply stated that styling wasn't the focus of this project. Also text and pictures aren't aligned properly,
+the styling was done haphazardly at the end.
 - Refactor the code further so its slimmer.
 
 ## Screenshots of use!
 
-<a href="https://ibb.co/hMMtuy"><img src="https://preview.ibb.co/gpkKZy/Screen_Shot_2018_07_06_at_15_45_46.png" alt="Screen_Shot_2018_07_06_at_15_45_46" border="0"></a>
+Before clicking the add a user button:
+<a href="https://ibb.co/d2mDcJ"><img src="https://preview.ibb.co/c8kTBd/Screen_Shot_2018_07_06_at_16_40_57.png" alt="Screen_Shot_2018_07_06_at_16_40_57" border="0"></a>
 
+After clicking the add a user button:
+<a href="https://ibb.co/hZSrWd"><img src="https://preview.ibb.co/cANQrd/Screen_Shot_2018_07_06_at_16_41_03.png" alt="Screen_Shot_2018_07_06_at_16_41_03" border="0"></a>
 
 ## Contributors
 
