@@ -7,7 +7,7 @@ const Information = (props) => {
   return (
     <div style={wrapperStyle}>
       <ul>{props.firstName} {props.lastName}</ul>
-      {props.email}.
+      {props.email}
     </div>
   );
 };
